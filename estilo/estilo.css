@@ -80,12 +80,14 @@
   /* Specifity 11 */
 a:link {
   background-color: white;
-  color: teal;
+  color:navy;
 }
 
 /* Specifity 11 */
 a:visited {
   background-color: white;
-  color: turquoise;
+  color: steelblue;
 }
+
+/* cambiar colores específicos en el nav */
     
