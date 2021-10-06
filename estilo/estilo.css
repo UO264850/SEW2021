@@ -14,8 +14,10 @@
     font-size: 2em;
     text-transform: capitalize;
     text-align: left;
+    padding-left: 0.2em;
     background-color: navy;
     color: turquoise;
+    border-radius: 18px;
   }
 
   /*Especificidad: 001*/
@@ -24,8 +26,10 @@
     font-size: 1em;
     text-transform: capitalize;
     text-align: left;
+    padding-left: 0.5em;
     background-color: navy;
     color: turquoise;
+    border-radius: 18px;
   }
 
   /*quitar si no cambia con respecto al body*/
@@ -63,9 +67,18 @@
     padding-bottom: 6px;
   }
 
-  table, td {
-    background-color: white;
+  table{
+    background-color: turquoise;
     color: black;
+    padding: 0.25em;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+  }
+
+  td{
+    color: black;
+    background-color: white;
     padding: 0.25em;
     text-align: center;
     border: 2px solid;
@@ -74,7 +87,7 @@
 
   th{
     color: black;
-    background-color: white;
+    background-color: turquoise;
   }
 
   /* Specifity 11 */
