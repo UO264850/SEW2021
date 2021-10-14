@@ -32,41 +32,47 @@
     border-radius: 18px;
   }
 
-  /*quitar si no cambia con respecto al body*/
+  /*Especificidad: 001*/
   p {
     padding-left: 0.5em;
     padding-right: 3em;
   }
 
- /* Specifity 1 */
+  /*Especificidad: 001*/
   img{
     max-width: 100%;
     height: auto;
   }
 
+   /*Especificidad: 001*/
   header {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
+   /*Especificidad: 001*/
   footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
 
   /** preguntar por estilo de las anidadas **/
+  /*Especificidad: 001*/
   ul {
     background-color: white;
     color: black;
     list-style-type: square;
   }
 
+  /*Especificidad: 001*/
   li {
     background-color: white;
     color: black;
     padding-top: 6px;
     padding-bottom: 6px;
+    list-style-type: square;/*mirar esta*/
   }
 
+  /*Especificidad: 001*/
   table{
     background-color: turquoise;
     color: black;
@@ -76,6 +82,7 @@
     border-color: black;
   }
 
+  /*Especificidad: 001*/
   td{
     color: black;
     background-color: white;
@@ -85,22 +92,26 @@
     border-color: black;
   }
 
+  /*Especificidad: 001*/
   th{
     color: black;
     background-color: turquoise;
   }
 
-  /* Specifity 11 */
-a:link {
-  background-color: white;
-  color:navy;
-}
+  /*Especificidad 011 */
+  a:link {
+    background-color: white;
+    color:navy;
+  }
 
-/* Specifity 11 */
-a:visited {
-  background-color: white;
-  color: steelblue;
-}
+  /*Especificidad 011 */
+  a:visited {
+    background-color: white;
+    color: steelblue;
+  }
 
-/* cambiar colores específicos en el nav */
-    
+  nav{
+    background-color: navy;
+    color: turquoise;
+    text-transform: uppercase;
+  }

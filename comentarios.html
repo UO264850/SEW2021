@@ -5,6 +5,7 @@
 <head>
     <base href="" />
     <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
     <meta name="author" content="UO264850" />
     <meta name="desription"
         content="Formulario para comentar sobre James Gosling como práctica 1 de la asignatura SEW" />
@@ -28,38 +29,41 @@
         <section>
             <h2>¡Deja tu opinión!</h2>
             <form>
-
                 <label for="email">Introduce tu email:</label>
                 <input type="email" id="email" name="email"><br>
 
                 <label for="asunto">Objeto del comentario:</label>
                 <input type="text" id="asunto"><br>
 
-                <p>¿Cuánto sabías sobre James Gosling antes de llegar aquí?</p>
-                <input type="radio" id="mucho" name="conocimiento" value="mucho">
-                <label for="mucho">¡Sabía mucho sobre James Gosling!</label><br>
-                <input type="radio" id="bastante" name="conocimiento" value="bastante">
-                <label for="bastante">Sabía bastante sobre James Gosling</label><br>
-                <input type="radio" id="poco" name="conocimiento" value="poco">
-                <label for="poco">Sabía poco sobre James Gosling</label><br>
-                <input type="radio" id="nada" name="conocimiento" value="nada">
-                <label for="nada">No sabía nada sobre James Gosling</label><br>
+                <fieldset>
+                    <legend>¿Cuánto sabías sobre James Gosling antes de llegar aquí?</legend>
+                    <input type="radio" id="mucho" name="conocimiento" value="mucho">
+                    <label for="mucho">¡Sabía mucho sobre James Gosling!</label><br>
+                    <input type="radio" id="bastante" name="conocimiento" value="bastante">
+                    <label for="bastante">Sabía bastante sobre James Gosling</label><br>
+                    <input type="radio" id="poco" name="conocimiento" value="poco">
+                    <label for="poco">Sabía poco sobre James Gosling</label><br>
+                    <input type="radio" id="nada" name="conocimiento" value="nada">
+                    <label for="nada">No sabía nada sobre James Gosling</label><br>
+                </fieldset>
 
-                <p>Selecciona las afirmaciones que más se ajusten a tu perfil:</p>
-                <input type="checkbox" id="op1" name="op1" value="java">
-                <label for="op1">Conocía la existencia de Java</label><br>
-                <input type="checkbox" id="op2" name="op2" value="java2">
-                <label for="op2">He trabajado con Java previamente</label><br>
-                <input type="checkbox" id="op3" name="op3" value="libro">
-                <label for="op3">He leido previamente alguno de los libros de Gosling</label><br>
-                <input type="checkbox" id="op4" name="op4" value="acad">
-                <label for="op4">Sabía de la trayectoria académica de Gosling</label><br>
-                <input type="checkbox" id="op5" name="op5" value="premio">
-                <label for="op5">Conocía (algunos) premios que Gosling ha recibido</label><br>
+                <fieldset>
+                    <legend>Selecciona las afirmaciones que más se ajusten a tu perfil:</legend>
+                    <input type="checkbox" id="op1" name="op1" value="java">
+                    <label for="op1">Conocía la existencia de Java</label><br>
+                    <input type="checkbox" id="op2" name="op2" value="java2">
+                    <label for="op2">He trabajado con Java previamente</label><br>
+                    <input type="checkbox" id="op3" name="op3" value="libro">
+                    <label for="op3">He leido previamente alguno de los libros de Gosling</label><br>
+                    <input type="checkbox" id="op4" name="op4" value="acad">
+                    <label for="op4">Sabía de la trayectoria académica de Gosling</label><br>
+                    <input type="checkbox" id="op5" name="op5" value="premio">
+                    <label for="op5">Conocía (algunos) premios que Gosling ha recibido</label><br>
+                </fieldset>
 
                 <label for="opinion">Escribe tu comentario:</label>
                 <input type="text" id="opinion"><br>
-                <input type="button" value="Enviar"><input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar"><input type="reset" value="Limpiar">
             </form>
         </section>
     </main>
