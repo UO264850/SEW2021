@@ -1,0 +1,27 @@
+/* Specifity 1 */
+body{
+    display: grid;
+       grid: "h h h"
+             "m m a"
+             "f f f";
+       grid-template-columns: auto 1fr 20%;
+}
+
+/* Specifity 1 */
+main { 
+    grid-area: m;     
+}
+
+aside{
+    grid-area: a;
+}
+
+/* Specifity 1 */
+header{
+    grid-area: h;
+}
+
+/* Specifity 1 */
+footer{
+    grid-area: f;
+}
