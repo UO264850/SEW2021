@@ -1,9 +1,9 @@
 /*Especificidad: 001*/
 body{
     display: grid;
-       grid: "h h h"
-             "m m a"
-             "f f f";
+    grid: "h h h h"
+          "m m m a"
+          "f f f f";
 }
 
 /*Especificidad: 001*/
