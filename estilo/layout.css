@@ -1,4 +1,4 @@
-/* Specifity 1 */
+/*Especificidad: 001*/
 body{
     display: grid;
        grid: "h h h"
@@ -7,24 +7,23 @@ body{
        grid-template-columns: auto 1fr 20%;
 }
 
-/* Specifity 1 */
+/*Especificidad: 001*/
 main { 
     grid-area: m;    
     padding-right: 0.5em;
 }
 
+/*Especificidad: 001*/
 aside{
     grid-area: a;
-    padding-left: 0.5em;
-    padding-top: 1em;
 }
 
-/* Specifity 1 */
+/*Especificidad: 001*/
 header{
     grid-area: h;
 }
 
-/* Specifity 1 */
+/*Especificidad: 001*/
 footer{
     grid-area: f;
 }
