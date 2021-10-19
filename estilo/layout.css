@@ -9,11 +9,14 @@ body{
 
 /* Specifity 1 */
 main { 
-    grid-area: m;     
+    grid-area: m;    
+    padding-right: 0.5em;
 }
 
 aside{
     grid-area: a;
+    padding-left: 0.5em;
+    padding-top: 1em;
 }
 
 /* Specifity 1 */
