@@ -4,7 +4,6 @@ body{
        grid: "h h h"
              "m m a"
              "f f f";
-       grid-template-columns: auto 1fr 20%;
 }
 
 /*Especificidad: 001*/
