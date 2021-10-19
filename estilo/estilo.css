@@ -117,6 +117,7 @@
 
   /*Especificidad: 001*/
   th{
+    font-size: 1em;
     color: black;
     background-color: turquoise;
   }
