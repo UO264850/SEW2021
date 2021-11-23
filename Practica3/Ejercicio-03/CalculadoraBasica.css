@@ -1,0 +1,42 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color:white;
+    margin-left: 8%;
+    padding-top: 8%;
+}
+
+input[type="button"]{
+    background-color: lightgrey;
+    color: black;
+}
+
+section{
+    background-color: black;
+    width: 30%;
+    height: 70%;
+    border-radius: 5%;
+    padding-bottom: 10%;
+}
+
+div{
+    width: 100%;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 16.5%);
+    grid-gap: 5%;
+    grid-auto-rows: minmax(35%, auto);
+}
+
+input[type="text"]{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 8%;
+    margin-left: 8%;
+}

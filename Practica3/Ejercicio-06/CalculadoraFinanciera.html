@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>SEW P3 Ejercicio6</title>
+        <link rel="stylesheet" href="CalculadoraFinanciera.css">
+        <script src="CalculadoraFinanciera.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora Financiera. Capital Obtenido</h1>
+        <div id="entradas">
+            <p>Capital invertido</p>
+            <input type="text" id="capInvertido">
+            <p> Tipo de interés (%)</p>
+            <input type="text" id="interes">
+            <p>Número de años</p>
+            <input type="text" id="tiempo">
+            <p>Retención (%)</p>
+            <input type="text" id="retencion">
+            <input type="button" id="calcular" value="Calcular" onclick="calc.calcular()"> 
+        </div>
+        <div id="resultados">
+            <p>Capital Reunido</p>
+            <input type="text" id="capReunido" disabled>
+            <p>Interés Final</p>
+            <input type="text" id="interesFinal" disabled>
+            <p>Retención</p>
+            <input type="text" id="retencionFinal" disabled>
+            <p>Capital Obtenido</p>
+            <input type="text" id="CapObtenido" disabled>
+            <input type="button" id="limpiar" value="Limpiar valores" onclick="calc.limpiar()"> 
+        </div>
+    </body>
+</html>

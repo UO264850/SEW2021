@@ -1,0 +1,20 @@
+body{
+    background-color: darkgray;
+}
+
+#botones{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 65px);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(40px, auto);
+}
+
+#pantalla{
+    font-size: large;
+    width: 338px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

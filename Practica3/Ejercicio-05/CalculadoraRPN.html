@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>SEW P3 Ejercicio5</title>
+        <link rel="stylesheet" href="CalculadoraRPN.css">
+        <script src="CalculadoraRPN.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora RPN</h1>
+        <input type="text" id="expresion" disabled>
+        <input type="text" id="pantalla" disabled>
+        <div id="botones">
+            <input type="button" id="sin" value="sin" onclick="calc.sin()">
+            <input type="button" id="cos" value="cos" onclick="calc.cos()">
+            <input type="button" id="tan" value="tan" onclick="calc.tan()">
+            <input type="button" id="log" value="log" onclick="calc.logaritmo()">
+            <input type="button" id="sqroot" value="√" onclick="calc.sqroot()">
+            <input type="button" id="1/x" value="1/x" onclick="calc.unodivx()">
+            <input type="button" id="pi" value="π" onclick="calc.pi()">
+            <input type="button" id="CE" value="CE" onclick="calc.limpiarRes()">
+            <input type="button" id="enter" value="enter" onclick="calc.push()">
+            <input type="button" id="C" value="C" onclick="calc.limpiar()">
+            <input type="button" id="borrar" value="←" onclick="calc.borrar()">
+            <input type="button" id="dv" value="/" onclick="calc.division()">
+            <input type="button" id="b7" value="7" onclick="calc.write(7)">
+            <input type="button" id="b8" value="8" onclick="calc.write(8)">
+            <input type="button" id="b9" value="9" onclick="calc.write(9)">
+            <input type="button" id="mul" value="x" onclick="calc.multiplicacion()">
+            <input type="button" id="b4" value="4" onclick="calc.write(4)">
+            <input type="button" id="b5" value="5" onclick="calc.write(5)">
+            <input type="button" id="b6" value="6" onclick="calc.write(6)">
+            <input type="button" id="res" value="-" onclick="calc.resta()">
+            <input type="button" id="b1" value="1" onclick="calc.write(1)">
+            <input type="button" id="b2" value="2" onclick="calc.write(2)">
+            <input type="button" id="b3" value="3" onclick="calc.write(3)">
+            <input type="button" id="sum" value="+" onclick="calc.suma()">
+            <input type="button" id="b0" value="0" onclick="calc.write(0)">
+            <input type="button" id="dec" value="." onclick="calc.write('.')">
+            
+        </div>
+    </body>
+</html>

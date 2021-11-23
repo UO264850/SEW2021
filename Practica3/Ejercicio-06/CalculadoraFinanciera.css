@@ -1,0 +1,34 @@
+body{
+    background-color: darkseagreen;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+
+h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+#entradas{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#resultados{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div{
+    margin-left: 10px;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 80px 150px;
+    grid-auto-rows: minmax(30px, 50px);
+}
+
+#calcular, #limpiar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
