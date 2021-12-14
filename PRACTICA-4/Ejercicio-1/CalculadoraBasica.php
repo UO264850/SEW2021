@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Practica 4 - Ejercicio1 - SEW</title>
     <meta name="author" content="Lucía Megido García - UO264850" />
-    <meta name="desciption" content="Ejercicio1" />
+    <meta name="desciption" content="Ejercicio 1 de la práctica 4 (PHP)" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="CalculadoraBasica.css">
 
@@ -15,43 +15,54 @@
     <?php
     class Calculadora
     {
-        protected $mensaje;
         protected $pantalla;
+        protected $numeroEnMemoria;
+        protected $wasMrcLastKey;
 
         public function __construct()
         {
-            $this->mensaje = "";
+            $this->numeroEnMemoria = 0;
+            $this->wasMrcLastKey = 0;
             $this->pantalla = "";
-        }
-
-        public function getMensaje()
-        {
-            //devuelve el mensaje
-            return $this->mensaje;
         }
 
         public function digitos($num)
         {
             $this->checkScreen();
-            echo ("<script>console.log('pulsado: " . $num . "');</script>");
             $this->pantalla .= $num;
         }
 
         public function mrc()
         {
-            $this->checkScreen();
+            if ($this->wasMrcLastKey == 1) {
+                $this->wasMrcLastKey = 0;
+                $this->numeroEnMemoria = 0;
+            } else {
+                $this->wasMrcLastKey = 1;
+                $this->pantalla = $this->numeroEnMemoria;
+            }
         }
 
         public function mmenos()
         {
             $this->checkScreen();
-            return $this->mensaje;
+            $this->wasMrcLastKey = 0;
+            try {
+                $this->numeroEnMemoria -= $this->pantalla;
+            } catch (Error $e) {
+                $this->pantalla = 'Error';
+            }
         }
 
         public function mmas()
         {
             $this->checkScreen();
-            return $this->mensaje;
+            $this->wasMrcLastKey = 0;
+            try {
+                $this->numeroEnMemoria += $this->numeroPantalla;
+            } catch (Error $e) {
+                $this->pantalla = 'Error';
+            }
         }
 
         public function division()
@@ -86,11 +97,13 @@
         public function borrar()
         {
             $this->checkScreen();
+            $this->numeroEnMemoria = "";
             $this->pantalla = "";
         }
 
         public function igual()
         {
+            $this->checkScreen();
             try {
                 $this->pantalla = eval("return $this->pantalla;");
             } catch (Error $e) {
@@ -135,20 +148,20 @@
         }
     }
 
-    session_name("calculadora");
+    session_name("calcu");
     session_start();
 
-    if (!isset($_SESSION["calculadora"])) {
-        $_SESSION["calculadora"] = new Calculadora();
+    if (!isset($_SESSION["calcu"])) {
+        $_SESSION["calcu"] = new Calculadora();
     } else if (count($_POST) > 0) {
         //pulsamos boton en calculadora
-        $_SESSION["calculadora"]->keyPressed();
+        $_SESSION["calcu"]->keyPressed();
     }
-    
+
     echo "
     <section id='calculadora'>
         <h1>Calculadora Básica</h1>
-        <input type='text' id='pantalla' name='pantalla' value='" . $_SESSION["calculadora"]->updateScreen() . "' disabled>
+        <input type='text' id='pantalla' name='pantalla' title='pantalla' value='" . $_SESSION["calcu"]->updateScreen() . "' disabled>
         <form action='#' method='post' name='botones'>
             <input type='submit' class='button' name='mrc' value='mrc' />
             <input type='submit' class='button' name='m-' value='m-' />
