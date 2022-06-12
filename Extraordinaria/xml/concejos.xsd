@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="concejos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="concejo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="concejo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="habitantes" />
+        <xs:element ref="capital" />
+        <xs:element ref="fiesta" />
+        <xs:element ref="poblaciones" />
+        <xs:element ref="enlaces" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="habitantes" type="xs:integer" />
+  <xs:element name="capital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="habitantes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fiesta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="descripcion" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="galeria" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="descripcion" type="xs:string" />
+  <xs:element name="galeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="3" ref="multimedia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multimedia" type="xs:string" />
+  <xs:element name="poblaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="2" maxOccurs="5" ref="poblacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poblacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="habitantes" />
+        <xs:element ref="destacado" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="destacado" type="xs:string" />
+  <xs:element name="enlaces">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="3" ref="enlace" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enlace" type="xs:string" />
+</xs:schema>

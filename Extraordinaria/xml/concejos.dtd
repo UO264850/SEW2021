@@ -1,0 +1,16 @@
+<!ELEMENT concejos (concejo+)>
+<!ELEMENT concejo (habitantes, capital, fiesta, poblaciones, enlaces)>
+<!ELEMENT habitantes (#PCDATA)>
+<!ELEMENT capital (habitantes)>
+<!ELEMENT fiesta (descripcion, galeria?)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT galeria (multimedia+)>
+<!ELEMENT multimedia (#PCDATA)>
+<!ELEMENT poblaciones (poblacion+)>
+<!ELEMENT poblacion (habitantes, destacado)>
+<!ELEMENT destacado (#PCDATA)>
+<!ELEMENT enlaces (enlace+)>
+<!ELEMENT enlace (#PCDATA)>
+<!ATTLIST concejo nombre CDATA #REQUIRED>
+<!ATTLIST fiesta nombre CDATA #REQUIRED>
+<!ATTLIST poblacion nombre CDATA #REQUIRED>

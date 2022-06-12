@@ -1,8 +1,8 @@
   /*Especificidad: 001*/
   body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     padding-left: 1em;
     padding-right: 5em;
     text-align: left;
@@ -10,10 +10,10 @@
 
   /*Especificidad: 001*/
   aside{
-    margin-left: 0.5em;
+    margin-right: 0.7em;
     margin-top: 1em;
-    border: 1px solid;
-    border-color: navy;
+    border-right: 2px solid;
+    border-color: turquoise;
   }
 
   /*Especificidad: 001*/
@@ -22,9 +22,9 @@
     font-size: 2em;
     text-transform: capitalize;
     text-align: left;
-    padding-left: 0.2em;
-    background-color: navy;
-    color: turquoise;
+    padding-left: 0.5em;
+    background-color: turquoise;
+    color: navy;
     border-radius: 18px;
   }
 
@@ -34,9 +34,9 @@
     font-size: 1.2em;
     text-transform: capitalize;
     text-align: left;
-    padding-left: 0.5em;
-    background-color: navy;
-    color: turquoise;
+    padding-left: 1em;
+    background-color: turquoise;
+    color: navy;
     border-radius: 18px;
   }
 
@@ -45,9 +45,9 @@
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
     font-size: 1em;
     text-align: left;
-    padding-left: 0.5em;
-    background-color: navy;
-    color: turquoise;
+    padding-left: 1em;
+    background-color: turquoise;
+    color: navy;
     border-radius: 18px;
   }
 
@@ -61,7 +61,7 @@
   img, video{
     padding-left: 0.2em;
     padding-right: 0.2em;
-    max-width: 100%;
+    max-width: 98%;
     height: auto;
   }
 
@@ -89,42 +89,42 @@
 
   /*Especificidad: 001*/
   li {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     padding-top: 6px;
     padding-bottom: 6px;
   }
 
   /*Especificidad: 001*/
   table{
-    background-color: turquoise;
-    color: black;
+    background-color: navy;
+    color: white;
     padding: 0.25em;
     text-align: center;
     border: 2px solid;
-    border-color: black;
+    border-color: white;
   }
 
   /*Especificidad: 001*/
   td{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     padding: 0.25em;
     text-align: center;
     border: 2px solid;
-    border-color: black;
+    border-color: white;
   }
 
   /*Especificidad: 001*/
   th{
     font-size: 1em;
-    color: black;
-    background-color: turquoise;
+    color: white;
+    background-color: navy;
   }
 
   /*Especificidad 011 */
   a:link {
-    color:navy;
+    color:turquoise;
   }
 
   /*Especificidad 011 */
@@ -134,40 +134,25 @@
 
   /*Especificidad 001 */
   nav{
-    background-color: navy;
-    color: turquoise;
+    background-color: turquoise;
+    color: navy;
     display: flex;
     justify-content: space-evenly;
   }
 
   /*Especificidad 012 */
   nav a:link, nav a:visited{
-    background-color: navy;
-    color: turquoise;
+    background-color: turquoise;
+    color: navy;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
 
-  /*Especificidad 001 */
-  label, input{
-    margin: 0.5em;
-  }
-
-  /*Especificidad 001 */
-  fieldset{
-    margin: 0.5em;
-    border-color: navy;
-  }
-
-  /*Especificidad 011 */
-  input[type=email]{
-    width: 50%;
-  }
-
-  /*Especificidad 011 */
-  input[type=text]{
-    width: 100%;
-  }
+  #mapid { 
+    height: 700px; 
+    width: 1000px;
+}

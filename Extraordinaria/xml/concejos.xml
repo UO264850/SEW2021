@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concejos SYSTEM "concejos.dtd">
+<concejos>
+    <concejo nombre="Aller">
+        <habitantes>10808</habitantes>
+        <capital nombre="Cabañaquinta">
+            <habitantes>1400</habitantes>
+        </capital>
+        <fiesta nombre="El Rosario">
+            <descripcion>Fiesta celebrada en octubre</descripcion>
+            <galeria>
+                <multimedia>rosario1.jpg</multimedia>
+            </galeria>
+        </fiesta>
+        <poblaciones>
+            <poblacion nombre="Moreda">
+                <habitantes>4156</habitantes>
+                <destacado>Humanitarios</destacado>
+            </poblacion>
+            <poblacion nombre="Felechosa">
+                <habitantes>650</habitantes>
+                <destacado>Discoteca La Villar</destacado>
+            </poblacion>
+        </poblaciones>
+        <enlaces>
+            <enlace>https://www.aller.es/</enlace>
+            <enlace>https://www.turismoasturias.es/descubre/donde-ir/municipios/aller</enlace>
+        </enlaces>
+    </concejo>
+    <concejo nombre="Cangas del Narcea">
+        <habitantes>11966</habitantes>
+        <capital nombre="Cangas del Narcea">
+            <habitantes>7562</habitantes>
+        </capital>
+        <fiesta nombre="El Carmen y La Magdalena">
+            <descripcion>Muy famosa por La Descarga</descripcion>
+            <galeria>
+                <multimedia>cangas1.jpg</multimedia>
+                <multimedia>cangas2.jpg</multimedia>
+            </galeria>
+        </fiesta>
+        <poblaciones>
+            <poblacion nombre="Corias">
+                <habitantes>306</habitantes>
+                <destacado>Monasterio de Corias</destacado>
+            </poblacion>
+            <poblacion nombre="Cibuyo">
+                <habitantes>181</habitantes>
+                <destacado>Karting de Cibuyo</destacado>
+            </poblacion>
+            <poblacion nombre="Moal">
+                <habitantes>101</habitantes>
+                <destacado>Pueblo ejemplar 2018</destacado>
+            </poblacion>
+        </poblaciones>
+        <enlaces>
+            <enlace>https://www.elcomercio.es/premios-princesa/pueblo-ejemplar/moal-premio-pueblo-ejemplar-2018-paraiso-cangas-narcea-20180904004147-ntvo.html</enlace>
+        </enlaces>
+    </concejo>
+    <concejo nombre="Mieres">
+        <habitantes>38428</habitantes>
+        <capital nombre="Mieres del Camín">
+            <habitantes>22901</habitantes>
+        </capital>
+        <fiesta nombre="San Juan">
+            <descripcion>Se enciende una hoguera en la plaza del ayuntamiento</descripcion>
+            <galeria>
+                <multimedia>mieres1.jpg</multimedia>
+                <multimedia>mieres2.jpg</multimedia>
+                <multimedia>mieres3.jpg</multimedia>
+            </galeria>
+        </fiesta>
+        <poblaciones>
+            <poblacion nombre="Baiña">
+                <habitantes>264</habitantes>
+                <destacado>Estación de tren</destacado>
+            </poblacion>
+            <poblacion nombre="Ujo">
+                <habitantes>2187</habitantes>
+                <destacado>Iglesia de Ujo</destacado>
+            </poblacion>
+            <poblacion nombre="Cenera">
+                <habitantes>143</habitantes>
+                <destacado>Restaurante La Panoya</destacado>
+            </poblacion>
+        </poblaciones>
+        <enlaces>
+            <enlace>https://valledecenera.com/restaurante1.htm</enlace>
+            <enlace>https://www.mieres.es/turismo/nuestros-pueblos/</enlace>
+            <enlace>https://www.pueblosdeasturias.es/pueblos/mieres</enlace>
+        </enlaces>
+    </concejo>
+    <concejo nombre="Oviedo">
+        <habitantes>217 552</habitantes>
+        <capital nombre="Oviedo">
+            <habitantes>184121</habitantes>
+        </capital>
+        <fiesta nombre="San Mateo">
+            <descripcion>Duran una semana, siendo el 21 de Septiembre el dia más destacado</descripcion>
+            <galeria>
+                <multimedia>oviedo1.jpg</multimedia>
+                <multimedia>oviedo2.jpg</multimedia>
+            </galeria>
+        </fiesta>
+        <poblaciones>
+            <poblacion nombre="Colloto">
+                <habitantes>2909</habitantes>
+                <destacado>El Tonel de Colloto</destacado>
+            </poblacion>
+            <poblacion nombre="Corredoria">
+                <habitantes>12746</habitantes>
+                <destacado>Estadio Manuel Diaz Vega</destacado>
+            </poblacion>
+            <poblacion nombre="Latores">
+                <habitantes>326</habitantes>
+                <destacado>Iglesia de Santo Tomás de Latores</destacado>
+            </poblacion>
+        </poblaciones>
+        <enlaces>
+            <enlace>https://www.pueblosdeasturias.es/oviedo/oviedo/oviedo-capital</enlace>
+            <enlace>https://sanmateo.oviedo.es/</enlace>
+        </enlaces>
+    </concejo>
+</concejos>
