@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <base href="https://uo264850.github.io/SEW2021/Extraordinaria/" />
+        <title>Extraordinaria - SEW - UO264850</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <meta name="author" content="UO264850" />
+        <meta name="desription" content="Sitio web sobre Asturias. Evaluación extraordinaria SEW. PHP" />
+        <meta name="keywords" content="Asturias" />
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a title="Introducción" accesskey="I" tabindex="1" href="index.html">Introduccion</a>
+                <a title="Gastronomía" accesskey="G" tabindex="2" href="gastronomia.html">Gastronomía</a>
+                <a title="Fiestas" accesskey="F" tabindex="3" href="fiestas.html">Fiestas</a>
+                <a title="Mitología" accesskey="C" tabindex="4" href="mitologia.html">Mitología</a>
+                <a title="Geografía" accesskey="O" tabindex="5" href="geografia.html">Geografía</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Editar datos</h1>
+            <section>
+                <h2>Concejo</h2>
+                <form method="post" action="editarConcejo.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <p>Capital: <input type="text" name="capital" /> </p>
+                    <p>Población: <input type="text" name="poblacion" /></p>
+                    <p>Plato: <input type="text" name="plato" /></p>
+                    <input type="submit" value="Editar Concejo" />
+                </form>
+            </section>
+            <section>
+                <h2>Fiesta</h2>
+                <form method="post" action="editarFiesta.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <p>Dia: <input type="number" name="dia" /></p>
+                    <p>Mes: <input type="number" name="mes" /></p>
+                    <p>Descripción: <input type="text" name="descripcion" /> </p>
+                    <p>Concejo:<input type="text" name="concejo" /> </p>
+                    <input type="submit" value="Editar Fiesta" />
+                </form>
+            </section>
+            <section>
+                <h2>Gastronomia</h2>
+                <form method="post" action="editarGastronomia.php">
+                    <p>Plato:<input type="text" name="plato" /> </p>
+                    <p>Descripción: <input type="text" name="descripcion" /> </p>
+                    <p>Valoración: <input type="number" name="valoracion" /></p>
+                    <p>Popularidad: <input type="number" name="popularidad" /></p>
+                    <input type="submit" value="Editar Plato" />
+                </form>
+            </section>
+            <section>
+                <h2>Geografía</h2>
+                <form method="post" action="editarGeografia.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <p>Tipo: <input type="text" name="tipo" /> </p>
+                    <p>Descripción: <input type="text" name="descripcion" /> </p>
+                    <p>Concejo: <input type="text" name="concejo" /></p>
+                    <input type="submit" value="Editar Geografía" />
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

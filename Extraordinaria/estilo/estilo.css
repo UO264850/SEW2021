@@ -140,6 +140,11 @@
     justify-content: space-evenly;
   }
 
+  /*Especificidad 001 */
+  label, input{
+    margin: 0.5em;
+  }
+
   /*Especificidad 012 */
   nav a:link, nav a:visited{
     background-color: turquoise;

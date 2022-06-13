@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <base href="https://uo264850.github.io/SEW2021/Extraordinaria/" />
+        <title>Extraordinaria - SEW - UO264850</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <meta name="author" content="UO264850" />
+        <meta name="desription" content="Sitio web sobre Asturias. Evaluación extraordinaria SEW. PHP" />
+        <meta name="keywords" content="Asturias" />
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a title="Introducción" accesskey="I" tabindex="1" href="index.html">Introduccion</a>
+                <a title="Gastronomía" accesskey="G" tabindex="2" href="gastronomia.html">Gastronomía</a>
+                <a title="Fiestas" accesskey="F" tabindex="3" href="fiestas.html">Fiestas</a>
+                <a title="Mitología" accesskey="C" tabindex="4" href="mitologia.html">Mitología</a>
+                <a title="Geografía" accesskey="O" tabindex="5" href="geografia.html">Geografía</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Borrar datos</h1>
+            <section>
+                <h2>Concejo</h2>
+                <form method="post" action="borrarConcejo.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <input type="submit" value="Borrar Concejo" />
+                </form>
+            </section>
+            <section>
+                <h2>Fiesta</h2>
+                <form method="post" action="borrarFiesta.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <input type="submit" value="Borrar Fiesta" />
+                </form>
+            </section>
+            <section>
+                <h2>Gastronomia</h2>
+                <form method="post" action="borrarGastronomia.php">
+                    <p>Plato:<input type="text" name="plato" /> </p>
+                    <input type="submit" value="Borrar Plato" />
+                </form>
+            </section>
+            <section>
+                <h2>Geografía</h2>
+                <form method="post" action="borrarGeografia.php">
+                    <p>Nombre:<input type="text" name="nombre" /> </p>
+                    <input type="submit" value="Borrar Geografía" />
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
