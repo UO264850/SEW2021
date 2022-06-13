@@ -2,7 +2,7 @@
 body{
     display: grid;
     grid: "h h h h"
-          "m m m a"
+          "a m m m"
           "f f f f";
 }
 
