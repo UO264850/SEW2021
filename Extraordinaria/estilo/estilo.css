@@ -1,8 +1,8 @@
   /*Especificidad: 001*/
   body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-left: 1em;
     padding-right: 5em;
     text-align: left;
@@ -13,7 +13,7 @@
     margin-right: 0.7em;
     margin-top: 1em;
     border-right: 2px solid;
-    border-color: turquoise;
+    border-color: navy;
   }
 
   /*Especificidad: 001*/
@@ -23,8 +23,8 @@
     text-transform: capitalize;
     text-align: left;
     padding-left: 0.5em;
-    background-color: turquoise;
-    color: navy;
+    background-color: navy;
+    color: yellow;
     border-radius: 18px;
   }
 
@@ -35,8 +35,8 @@
     text-transform: capitalize;
     text-align: left;
     padding-left: 1em;
-    background-color: turquoise;
-    color: navy;
+    background-color: navy;
+    color: yellow;
     border-radius: 18px;
   }
 
@@ -46,8 +46,8 @@
     font-size: 1.3em;
     text-align: left;
     padding-left: 1em;
-    background-color: turquoise;
-    color: navy;
+    background-color: navy;
+    color: yellow;
     border-radius: 18px;
   }
 
@@ -90,42 +90,42 @@
 
   /*Especificidad: 001*/
   li {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-top: 6px;
     padding-bottom: 6px;
   }
 
   /*Especificidad: 001*/
   table{
-    background-color: navy;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 0.25em;
     text-align: center;
     border: 2px solid;
-    border-color: white;
+    border-color: black;
   }
 
   /*Especificidad: 001*/
   td{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     padding: 0.25em;
     text-align: center;
     border: 2px solid;
-    border-color: white;
+    border-color: black;
   }
 
   /*Especificidad: 001*/
   th{
     font-size: 1em;
-    color: white;
-    background-color: navy;
+    color: black;
+    background-color: yellow;
   }
 
   /*Especificidad 011 */
   a:link {
-    color:turquoise;
+    color:navy;
   }
 
   /*Especificidad 011 */
@@ -135,8 +135,8 @@
 
   /*Especificidad 001 */
   nav{
-    background-color: turquoise;
-    color: navy;
+    background-color: navy;
+    color: yellow;
     display: flex;
     justify-content: space-evenly;
   }
@@ -148,8 +148,8 @@
 
   /*Especificidad 012 */
   nav a:link, nav a:visited{
-    background-color: turquoise;
-    color: navy;
+    background-color: navy;
+    color: yellow;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2em;
