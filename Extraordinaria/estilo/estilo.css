@@ -31,7 +31,7 @@
   /*Especificidad: 001*/
   h2 {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-transform: capitalize;
     text-align: left;
     padding-left: 1em;
@@ -43,7 +43,7 @@
   /*Especificidad: 001*/
   h3 {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
-    font-size: 1.3em;
+    font-size: 1.7em;
     text-align: left;
     padding-left: 1em;
     background-color: navy;
@@ -55,7 +55,7 @@
   p {
     padding-left: 0.5em;
     padding-right: 3em;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   /*Especificidad: 001*/
